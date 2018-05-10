@@ -75,7 +75,7 @@ function numerize(n, decimals = 2) {
     }
 }
 
-function numerize_class() {
+window.onload = function numerize_class() {
 	var n = document.getElementsByClassName("numerize");
 	for (var i = 0, len = n.length; i < len; i++) {
 		n[i].innerHTML = numerize(n[i].innerHTML);
